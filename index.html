@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><form>
+    <div class="container">
+        <h1>Hey there!</h1>
+        
+        <label>
+            <span>What's your name?</span>
+            <input required type="text" placeholder="Enter your name">
+        </label>
+
+        <label>
+            <span>What's your email adress</span>
+            <input required type="email" placeholder="Enter your email adress">
+        </label>
+
+        <label>
+            <span>What services are you looking for?</span>
+            <select required>
+                <option value="0" disabled selected>Choose a service</option>
+                <option value="S.E.O">S.E.O</option>
+                <option value="Website">Website</option>
+                <option value="D-marketing">Digital Marketing</option>
+            </select>
+        </label>
+
+        <label>
+            <span>What is your budget</span>
+            <select required>
+                <option value="0" disabled selected>Select budget</option>
+                <option>less than 10k</option>
+                <option>10k</option>
+                <option>20k</option>
+                <option>25k+</option>
+            </select>
+        </label>
+
+        <label>
+            <span>Anything else you'd like to tell us?</span>
+            <textarea cols="30" rows="2" placeholder="Your message here..."></textarea>
+        </label>
+
+        <div class="terms">
+           
+                <span>I agree with T&C</span>
+                <label for="checkbox">
+                <input name="checkbox" id="checkbox" type="checkbox" required>
+            </label>
+        </div>
+
+        <button type="submit" value="Submit">
+           Submit →
+        </button>
+    </div>
+  </form>
+</body>
+</html>
